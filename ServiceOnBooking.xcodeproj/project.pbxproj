@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8210BF2E2776830F00EBDACB /* DetailServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8210BF2D2776830F00EBDACB /* DetailServiceView.swift */; };
+		8210BF31277686CE00EBDACB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8210BF30277686CE00EBDACB /* WelcomeView.swift */; };
+		825E2DF72770283300D76C27 /* DetailUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2DF62770283300D76C27 /* DetailUserView.swift */; };
 		82D844FF276F0F9F0052B907 /* ServiceOnBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D844FE276F0F9F0052B907 /* ServiceOnBookingApp.swift */; };
 		82D84501276F0F9F0052B907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D84500276F0F9F0052B907 /* ContentView.swift */; };
 		82D84503276F0FA00052B907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D84502276F0FA00052B907 /* Assets.xcassets */; };
 		82D84506276F0FA00052B907 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D84505276F0FA00052B907 /* Preview Assets.xcassets */; };
 		82D84508276F0FA00052B907 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D84507276F0FA00052B907 /* Persistence.swift */; };
 		82D8450B276F0FA00052B907 /* ServiceOnBooking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82D84509276F0FA00052B907 /* ServiceOnBooking.xcdatamodeld */; };
+		82D84512276FAF600052B907 /* RegistrationNewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D84511276FAF600052B907 /* RegistrationNewClient.swift */; };
+		82D84514276FCB270052B907 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D84513276FCB270052B907 /* ServicesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8210BF2D2776830F00EBDACB /* DetailServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailServiceView.swift; sourceTree = "<group>"; };
+		8210BF30277686CE00EBDACB /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		825E2DF62770283300D76C27 /* DetailUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserView.swift; sourceTree = "<group>"; };
+		825E2DF827702DC100D76C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		82D844FB276F0F9F0052B907 /* ServiceOnBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceOnBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D844FE276F0F9F0052B907 /* ServiceOnBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOnBookingApp.swift; sourceTree = "<group>"; };
 		82D84500276F0F9F0052B907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +32,8 @@
 		82D84505276F0FA00052B907 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82D84507276F0FA00052B907 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		82D8450A276F0FA00052B907 /* ServiceOnBooking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ServiceOnBooking.xcdatamodel; sourceTree = "<group>"; };
+		82D84511276FAF600052B907 /* RegistrationNewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNewClient.swift; sourceTree = "<group>"; };
+		82D84513276FCB270052B907 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8210BF2B277682C700EBDACB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8210BF2F277686BF00EBDACB /* Welcome */,
+				8210BF2C277682DE00EBDACB /* DetailService */,
+				825E2DF52770281F00D76C27 /* DetailUser */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8210BF2C277682DE00EBDACB /* DetailService */ = {
+			isa = PBXGroup;
+			children = (
+				8210BF2D2776830F00EBDACB /* DetailServiceView.swift */,
+			);
+			path = DetailService;
+			sourceTree = "<group>";
+		};
+		8210BF2F277686BF00EBDACB /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				8210BF30277686CE00EBDACB /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		825E2DF52770281F00D76C27 /* DetailUser */ = {
+			isa = PBXGroup;
+			children = (
+				825E2DF62770283300D76C27 /* DetailUserView.swift */,
+			);
+			path = DetailUser;
+			sourceTree = "<group>";
+		};
 		82D844F2276F0F9F0052B907 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +100,15 @@
 		82D844FD276F0F9F0052B907 /* ServiceOnBooking */ = {
 			isa = PBXGroup;
 			children = (
+				8210BF2B277682C700EBDACB /* Modules */,
+				825E2DF827702DC100D76C27 /* Info.plist */,
 				82D844FE276F0F9F0052B907 /* ServiceOnBookingApp.swift */,
 				82D84500276F0F9F0052B907 /* ContentView.swift */,
+				82D84511276FAF600052B907 /* RegistrationNewClient.swift */,
 				82D84502276F0FA00052B907 /* Assets.xcassets */,
 				82D84507276F0FA00052B907 /* Persistence.swift */,
 				82D84509276F0FA00052B907 /* ServiceOnBooking.xcdatamodeld */,
+				82D84513276FCB270052B907 /* ServicesView.swift */,
 				82D84504276F0FA00052B907 /* Preview Content */,
 			);
 			path = ServiceOnBooking;
@@ -144,9 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D8450B276F0FA00052B907 /* ServiceOnBooking.xcdatamodeld in Sources */,
+				8210BF2E2776830F00EBDACB /* DetailServiceView.swift in Sources */,
+				82D84512276FAF600052B907 /* RegistrationNewClient.swift in Sources */,
+				82D84514276FCB270052B907 /* ServicesView.swift in Sources */,
+				8210BF31277686CE00EBDACB /* WelcomeView.swift in Sources */,
 				82D84508276F0FA00052B907 /* Persistence.swift in Sources */,
 				82D84501276F0F9F0052B907 /* ContentView.swift in Sources */,
 				82D844FF276F0F9F0052B907 /* ServiceOnBookingApp.swift in Sources */,
+				825E2DF72770283300D76C27 /* DetailUserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +334,8 @@
 				DEVELOPMENT_TEAM = 274RF4F6D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ServiceOnBooking/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Чтобы ставить аватарку";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +365,8 @@
 				DEVELOPMENT_TEAM = 274RF4F6D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ServiceOnBooking/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Чтобы ставить аватарку";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
